@@ -4,11 +4,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/SignInForm.java</file>
-            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Entities/Users.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterEquipe.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterUsers.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterArticle.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/MatchView.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterLivraison.java</file>
             <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Controller/UsersController.java</file>
-            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/SignUpFrom.java</file>
-            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/com/mycompany/myapp/MyApplication.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/ListUsers.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterProduit.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/ListEquipe.java</file>
+            <file>file:/home/gold/NetBeansProjects/TuniKoora/src/Views/AjouterJoueur.java</file>
         </group>
     </open-files>
 </project-private>

@@ -18,6 +18,9 @@ public class Users {
     private String email;
     private String password;
     private String repeatPassword;
+    
+    
+    public Users(){}
 
     public Users(int id, int cin, String username, String prenom, int tel, String email, String password, String repeatPassword) {
         this.id = id;

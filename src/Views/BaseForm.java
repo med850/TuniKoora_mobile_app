@@ -24,7 +24,7 @@ import com.codename1.ui.util.Resources;
  */
 public class BaseForm extends Form{
     
-    
+    private Form current;
         public BaseForm() {
     }
 
@@ -67,9 +67,24 @@ public class BaseForm extends Form{
                         new Label(res.getImage("profile-pic.jpg"), "PictureWhiteBackgrond"))
         ));
         
-     /*   tb.addMaterialCommandToSideMenu("Newsfeed", FontImage.MATERIAL_UPDATE, e -> new NewsfeedForm(res).show());
-        tb.addMaterialCommandToSideMenu("Profile", FontImage.MATERIAL_SETTINGS, e -> new ProfileForm(res).show());
-        tb.addMaterialCommandToSideMenu("Logout", FontImage.MATERIAL_EXIT_TO_APP, e -> new WalkthruForm(res).show());*/
+      //  tb.addMaterialCommandToSideMenu("Newsfeed", FontImage.MATERIAL_UPDATE, e -> new Home(res).show());
+      tb.addMaterialCommandToSideMenu("Profile", FontImage.MATERIAL_SETTINGS, e -> new ProfileForm(res).show());
+       tb.addMaterialCommandToSideMenu("Ajouter Users", FontImage.MATERIAL_UPDATE, e -> new AjouterUsers(res).show());
+
+   
+          tb.addMaterialCommandToSideMenu("Ajouter des produits", FontImage.MATERIAL_UPDATE, e -> new AjouterProduit(res).show());
+           tb.addMaterialCommandToSideMenu("Ajouter des articles", FontImage.MATERIAL_UPDATE, e -> new AjouterArticle( res).show());
+             tb.addMaterialCommandToSideMenu("Ajouter des equipes", FontImage.MATERIAL_UPDATE, e -> new AjouterEquipe( res).show());
+              tb.addMaterialCommandToSideMenu("Ajouter des matches", FontImage.MATERIAL_UPDATE, e -> new AjouterLivraison(res).show());
+              
+              
+              
+              //  tb.addMaterialCommandToSideMenu("Liste des livraison", FontImage.MATERIAL_UPDATE, e -> new ListLivraison(current, res).show());
+
+                     tb.addMaterialCommandToSideMenu("Liste Users", FontImage.MATERIAL_UPDATE, e -> new ListUsers(current, res).show());
+
+              tb.addMaterialCommandToSideMenu("Déconnexion", FontImage.MATERIAL_EXIT_TO_APP, e -> new SignInForm(res).show());
+
     }
     
     
