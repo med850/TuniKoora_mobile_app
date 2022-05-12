@@ -7,8 +7,10 @@ package Views;
 
 import Controller.UsersController;
 import com.codename1.components.FloatingHint;
+import com.codename1.components.ToastBar;
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
+import com.codename1.ui.Dialog;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
@@ -24,6 +26,9 @@ import com.codename1.ui.util.Resources;
  * @author gold
  */
 public class AjouterUsers extends BaseForm{
+    
+    
+    Form current;
     
     public AjouterUsers(Resources res){
         
@@ -82,6 +87,15 @@ public class AjouterUsers extends BaseForm{
         inscrit.addActionListener(e ->{
             
             UsersController.getInstance().register(cin, username, prenom, tel, email, password, password, res);
+           // Dialog.show("Success","account is saved","OK",null);
+          // new ListUsers(current, res).show();
+            
+             ToastBar.Status status = ToastBar.getInstance().createStatus();
+            status.setMessage("Utilisateur ajouté avec succé");
+             status.setExpires(3000); 
+            status.show();
+           
+           
             
         });
     }
